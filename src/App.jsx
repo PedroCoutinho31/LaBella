@@ -435,7 +435,7 @@ function Header({onAdmin}){
             <img 
               src="/logo.png" 
               alt="Logo La Bella" 
-              style={{ height: "40px", width: "auto", objectFit: "contain" }} 
+              style={{ height: "60px", width: "auto", objectFit: "contain" }} 
             />
             <span className="gv" style={{fontSize:"1.9rem",color:"var(--yellow)"}}>
               La Bella
@@ -1098,6 +1098,11 @@ function StoreView({menu,onAdmin,onOrderSaved}){
         <p className="mont" style={{fontSize:"0.68rem",fontWeight:600,letterSpacing:"0.16em",textTransform:"uppercase",color:"rgba(245,197,24,.7)",marginBottom:"0.75rem"}}>
           Pindamonhangaba · Desde 2012
         </p>
+        <img 
+          src="/logo.png" 
+          alt="Logo La Bella" 
+          style={{ height: "140px", width: "auto", marginBottom: "1rem" }} 
+        />
         <h1 className="gv" style={{fontSize:"clamp(3rem,10vw,5.5rem)",color:"var(--yellow)",lineHeight:1.1,textShadow:"0 2px 20px rgba(0,0,0,.55)"}}>
           La Bella Pizzaria
         </h1>
