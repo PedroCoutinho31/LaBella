@@ -246,42 +246,40 @@ const MENU_BASE = {
   },
   categories: [
     { id:"trad", label:"Tradicionais", desc:"As classicas de sempre, feitas com o molho La Bella", half:true, items:[
-      {id:"mussarela",       name:"Mussarela",           tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona e oregano",                                                    sizes:{M:50,G:55}},
-      {id:"margherita",      name:"Margherita",           tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona, oregano e manjericao fresco",                               sizes:{M:52,G:57}},
-      {id:"napolitana",      name:"Napolitana",           tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona, oregano e parmesao ralado",                                 sizes:{M:52,G:57}},
-      {id:"milho",           name:"Milho Verde",          tags:["vegetariana"],        desc:"Molho La Bella, mussarela, milho verde, azeitona e oregano",                                             sizes:{M:52,G:57}},
-      {id:"alho",            name:"Alho",                 tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, alho fatiado, azeitona e oregano",                                   sizes:{M:52,G:57}},
-      {id:"catupiry",        name:"Catupiry",             tags:["classica"],           desc:"Molho La Bella, mussarela, catupiry, azeitona e oregano",                                               sizes:{M:56,G:61}},
-      {id:"presunto",        name:"Presunto",             tags:["classica"],           desc:"Molho La Bella, mussarela, presunto, tomate, azeitona e oregano",                                       sizes:{M:54,G:59}},
-      {id:"salame",          name:"Salame",               tags:["classica"],           desc:"Molho La Bella, mussarela, salame, tomate, azeitona e oregano",                                         sizes:{M:58,G:63}},
-      {id:"quatro_queijos",  name:"4 Queijos",            tags:["classica"],           desc:"Molho La Bella, mussarela, provolone, catupiry, parmesao, azeitona e oregano",                          sizes:{M:62,G:67}},
-      {id:"rucula",          name:"Rucula",               tags:["classica"],           desc:"Molho La Bella, mussarela, tomate seco, azeitona, oregano e rucula",                                   sizes:{M:59,G:64}},
-      {id:"atum",            name:"Atum",                 tags:["classica"],           desc:"Molho La Bella, mussarela, atum, cebola, azeitona e oregano",                                           sizes:{M:63,G:68}},
-      {id:"calabresa",       name:"Calabresa",            tags:["classica","picante"], desc:"Molho La Bella, mussarela, calabresa fatiada, cebola, azeitona e oregano",                              sizes:{M:58,G:63}},
-      {id:"caipira",         name:"Caipira",              tags:["classica"],           desc:"Molho La Bella, mussarela, frango desfiado, milho, azeitona e oregano",                                 sizes:{M:60,G:65}},
-      {id:"bacon",           name:"Bacon",                tags:["classica"],           desc:"Molho La Bella, mussarela, bacon, azeitona e oregano",                                                  sizes:{M:63,G:68}},
-      {id:"brocolis",        name:"Brocolis",             tags:["vegetariana"],        desc:"Molho La Bella, mussarela, catupiry, brocolis, bacon, azeitona e oregano",                              sizes:{M:65,G:70}},
-      {id:"frango_cat",      name:"Frango c/ Catupiry",   tags:["favorito"],           desc:"Molho La Bella, mussarela, frango desfiado, catupiry, azeitona e oregano",                              sizes:{M:65,G:70}},
-      {id:"pepperoni",       name:"Pepperoni",            tags:["picante"],            desc:"Molho La Bella, mussarela, pepperoni, tomate, azeitona e oregano",                                     sizes:{M:68,G:73}},
-      {id:"portuguesa",      name:"Portuguesa",           tags:["classica"],           desc:"Molho La Bella, mussarela, presunto, ervilha, palmito, calabresa, ovos, azeitona e oregano",           sizes:{M:65,G:70}},
-      {id:"champignon",      name:"Champignon",           tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, champignon, azeitona e oregano",                                   sizes:{M:65,G:70}},
-      {id:"palmito",         name:"Palmito",              tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, palmito, azeitona e oregano",                                     sizes:{M:68,G:73}},
-      {id:"lombo",           name:"Lombo Campeao",        tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, lombo defumado, azeitona e oregano",                               sizes:{M:65,G:70}},
-      {id:"carne_seca",      name:"Carne Seca",           tags:["especial"],           desc:"Molho La Bella, mussarela, carne seca desfiada, cebola caramelizada, azeitona e oregano",              sizes:{M:70,G:75}},
-      {id:"strogonoff",      name:"Strogonoff",           tags:["especial"],           desc:"Molho La Bella, mussarela, frango, champignon, creme de leite, batata palha e oregano",                sizes:{M:68,G:73}},
-      {id:"pantaneira",      name:"Pantaneira",           tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, carne seca, azeitona e oregano",                                   sizes:{M:70,G:75}},
-      {id:"baiana",          name:"Baiana",               tags:["picante"],            desc:"Molho La Bella, mussarela, calabresa, pimenta, ovos, cebola, alho e oregano",                          sizes:{M:64,G:69}},
-      {id:"vegetariana",     name:"Vegetariana",          tags:["vegetariana"],        desc:"Molho La Bella, mussarela, brocolis, palmito, milho, champignon, azeitona e oregano",                  sizes:{M:72,G:77}},
-      {id:"peito_peru",      name:"Peito de Peru",        tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, peito de peru, azeitona e oregano",                               sizes:{M:64,G:69}},
-      {id:"siciliana",       name:"Siciliana",            tags:["especial"],           desc:"Molho La Bella, mussarela, champignon, bacon, azeitona e oregano",                                     sizes:{M:65,G:70}},
-      {id:"escarola",        name:"Escarola",             tags:["vegetariana"],        desc:"Molho La Bella, mussarela, escarola temperada, bacon, cebola, azeitona e oregano",                     sizes:{M:64,G:69}},
-      {id:"sardinha",        name:"Sardinha",             tags:["classica"],           desc:"Molho La Bella, mussarela, sardinha, cebola, ovo, tomate, azeitona e oregano",                         sizes:{M:62,G:67}},
-      {id:"genova",          name:"Genova Light",         tags:["light"],              desc:"Molho La Bella, mussarela, peito de peru, tomate, azeitona, manjericao e oregano",                     sizes:{M:65,G:70}},
-      {id:"veneza",          name:"Veneza Light",         tags:["light"],              desc:"Molho La Bella, mussarela, peito de peru, rucula, tomate, azeitona e oregano",                         sizes:{M:65,G:70}},
-      {id:"moda_casa",       name:"A Moda da Casa",       tags:["especial"],           desc:"Molho La Bella, mussarela, presunto, calabresa, bacon, ervilha, palmito, ovos, cebola e oregano",      sizes:{M:75,G:80}},
-      {id:"portuguesa_esp",  name:"Portuguesa Especial",  tags:["especial"],           desc:"Molho La Bella, mussarela, presunto, lombo, ervilha, ovo, milho, palmito, calabresa, cebola e oregano",sizes:{M:78,G:83}},
-      {id:"abobrinha",       name:"Abobrinha",            tags:["vegetariana"],        desc:"Molho La Bella, mussarela, abobrinha, parmesao, azeitona e oregano",                                   sizes:{M:65,G:70}},
-      {id:"berinjela",       name:"Berinjela",            tags:["vegetariana"],        desc:"Molho La Bella, berinjela temperada, mussarela, parmesao, azeitona e oregano",                         sizes:{M:65,G:70}},
+      {id:"mussarela",       name:"Mussarela",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona e oregano",                                                    sizes:{M:50,G:55}},
+      {id:"margherita",      name:"Margherita",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona, oregano e manjericao fresco",                               sizes:{M:52,G:57}},
+      {id:"napolitana",      name:"Napolitana",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, azeitona, oregano e parmesao ralado",                                 sizes:{M:52,G:57}},
+      {id:"milho",           name:"Milho Verde",  imagem: "/mussarela.png",          tags:["vegetariana"],        desc:"Molho La Bella, mussarela, milho verde, azeitona e oregano",                                             sizes:{M:52,G:57}},
+      {id:"alho",            name:"Alho",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, tomate, alho fatiado, azeitona e oregano",                                   sizes:{M:52,G:57}},
+      {id:"catupiry",        name:"Catupiry",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, catupiry, azeitona e oregano",                                               sizes:{M:56,G:61}},
+      {id:"presunto",        name:"Presunto",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, presunto, tomate, azeitona e oregano",                                       sizes:{M:54,G:59}},
+      {id:"salame",          name:"Salame",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, salame, tomate, azeitona e oregano",                                         sizes:{M:58,G:63}},
+      {id:"quatro_queijos",  name:"4 Queijos",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, provolone, catupiry, parmesao, azeitona e oregano",                          sizes:{M:62,G:67}},
+      {id:"rucula",          name:"Rucula",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, tomate seco, azeitona, oregano e rucula",                                   sizes:{M:59,G:64}},
+      {id:"atum",            name:"Atum",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, atum, cebola, azeitona e oregano",                                           sizes:{M:63,G:68}},
+      {id:"calabresa",       name:"Calabresa",  imagem: "/mussarela.png",          tags:["classica","picante"], desc:"Molho La Bella, mussarela, calabresa fatiada, cebola, azeitona e oregano",                              sizes:{M:58,G:63}},
+      {id:"caipira",         name:"Caipira",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, frango desfiado, milho, azeitona e oregano",                                 sizes:{M:60,G:65}},
+      {id:"bacon",           name:"Bacon",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, bacon, azeitona e oregano",                                                  sizes:{M:63,G:68}},
+      {id:"brocolis",        name:"Brocolis",  imagem: "/mussarela.png",          tags:["vegetariana"],        desc:"Molho La Bella, mussarela, catupiry, brocolis, bacon, azeitona e oregano",                              sizes:{M:65,G:70}},
+      {id:"frango_cat",      name:"Frango c/ Catupiry",  imagem: "/mussarela.png",          tags:["favorito"],           desc:"Molho La Bella, mussarela, frango desfiado, catupiry, azeitona e oregano",                              sizes:{M:65,G:70}},
+      {id:"pepperoni",       name:"Pepperoni",  imagem: "/mussarela.png",          tags:["picante"],            desc:"Molho La Bella, mussarela, pepperoni, tomate, azeitona e oregano",                                     sizes:{M:68,G:73}},
+      {id:"portuguesa",      name:"Portuguesa",  imagem: "/mussarela.png",          tags:["classica"],           desc:"Molho La Bella, mussarela, presunto, ervilha, palmito, calabresa, ovos, azeitona e oregano",           sizes:{M:65,G:70}},
+      {id:"champignon",      name:"Champignon",  imagem: "/mussarela.png",          tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, champignon, azeitona e oregano",                                   sizes:{M:65,G:70}},
+      {id:"palmito",         name:"Palmito",    imagem: "/mussarela.png",              tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, palmito, azeitona e oregano",                                     sizes:{M:68,G:73}},
+      {id:"lombo",           name:"Lombo Campeao",  imagem: "/mussarela.png",        tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, lombo defumado, azeitona e oregano",                               sizes:{M:65,G:70}},
+      {id:"carne_seca",      name:"Carne Seca",  imagem: "/mussarela.png",           tags:["especial"],           desc:"Molho La Bella, mussarela, carne seca desfiada, cebola caramelizada, azeitona e oregano",              sizes:{M:70,G:75}},
+      {id:"strogonoff",      name:"Strogonoff",  imagem: "/mussarela.png",           tags:["especial"],           desc:"Molho La Bella, mussarela, frango, champignon, creme de leite, batata palha e oregano",                sizes:{M:68,G:73}},
+      {id:"pantaneira",      name:"Pantaneira",  imagem: "/mussarela.png",           tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, carne seca, azeitona e oregano",                                   sizes:{M:70,G:75}},
+      {id:"baiana",          name:"Baiana",  imagem: "/mussarela.png",               tags:["picante"],            desc:"Molho La Bella, mussarela, calabresa, pimenta, ovos, cebola, alho e oregano",                          sizes:{M:64,G:69}},
+      {id:"vegetariana",     name:"Vegetariana",  imagem: "/mussarela.png",          tags:["vegetariana"],        desc:"Molho La Bella, mussarela, brocolis, palmito, milho, champignon, azeitona e oregano",                  sizes:{M:72,G:77}},
+      {id:"peito_peru",      name:"Peito de Peru",  imagem: "/mussarela.png",        tags:["especial"],           desc:"Molho La Bella, mussarela, catupiry, peito de peru, azeitona e oregano",                               sizes:{M:64,G:69}},
+      {id:"siciliana",       name:"Siciliana",  imagem: "/mussarela.png",            tags:["especial"],           desc:"Molho La Bella, mussarela, champignon, bacon, azeitona e oregano",                                     sizes:{M:65,G:70}},
+      {id:"escarola",        name:"Escarola",  imagem: "/mussarela.png",             tags:["vegetariana"],        desc:"Molho La Bella, mussarela, escarola temperada, bacon, cebola, azeitona e oregano",                     sizes:{M:64,G:69}},
+      {id:"sardinha",        name:"Sardinha",  imagem: "/mussarela.png",             tags:["classica"],           desc:"Molho La Bella, mussarela, sardinha, cebola, ovo, tomate, azeitona e oregano",                         sizes:{M:62,G:67}},
+      {id:"genova",          name:"Genova Light",  imagem: "/mussarela.png",         tags:["light"],              desc:"Molho La Bella, mussarela, peito de peru, tomate, azeitona, manjericao e oregano",                     sizes:{M:65,G:70}},
+      {id:"veneza",          name:"Veneza Light",  imagem: "/mussarela.png",         tags:["light"],              desc:"Molho La Bella, mussarela, peito de peru, rucula, tomate, azeitona e oregano",                         sizes:{M:65,G:70}},
+      {id:"moda_casa",       name:"A Moda da Casa",  imagem: "/mussarela.png",       tags:["especial"],           desc:"Molho La Bella, mussarela, presunto, calabresa, bacon, ervilha, palmito, ovos, cebola e oregano",      sizes:{M:75,G:80}},
+      {id:"portuguesa_esp",  name:"Portuguesa Especial",  imagem: "/mussarela.png",  tags:["especial"],           desc:"Molho La Bella, mussarela, presunto, lombo, ervilha, ovo, milho, palmito, calabresa,cebola, azeitona e oregano", sizes:{M:75,G:80}},
       {id:"salsicha",        name:"Salsicha",             tags:["classica"],           desc:"Molho La Bella, mussarela, salsicha fatiada, azeitona e oregano",                                      sizes:{M:58,G:63}},
       {id:"brocolis_palmito",name:"Brocolis c/ Palmito",  tags:["vegetariana"],        desc:"Molho La Bella, mussarela, brocolis, palmito, catupiry, azeitona e oregano",                           sizes:{M:70,G:75}},
     ]},
@@ -464,8 +462,12 @@ function ProductCard({pizza,allowsHalf,onAdd,onHalf}){
   const isUnique=Object.keys(pizza.sizes).length===1&&pizza.sizes.UN!==undefined
   return(
     <article className="card" style={{display:"flex",flexDirection:"column"}}>
-      <div style={{height:"7rem",background:"rgba(0,0,0,.35)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"2.8rem",borderBottom:"1px solid var(--border)"}}>
-        🍕
+      <div style={{height:"7rem",background:"rgba(0,0,0,.35)",display:"flex",alignItems:"center",justifyContent:"center",borderBottom:"1px solid var(--border)", overflow:"hidden"}}>
+        <img 
+          src={pizza.imagem} 
+          alt={pizza.name} 
+          style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+        />
       </div>
       <div style={{padding:"0.85rem",display:"flex",flexDirection:"column",gap:"0.3rem",flex:1}}>
         <div style={{display:"flex",flexWrap:"wrap",gap:"0.2rem"}}>
