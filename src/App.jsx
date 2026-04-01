@@ -431,7 +431,16 @@ function Header({onAdmin}){
     <header style={{position:"fixed",top:0,left:0,right:0,zIndex:30,background:"var(--wine-dk)",borderBottom:"2px solid var(--wine)",boxShadow:"0 2px 20px rgba(0,0,0,.65)"}}>
       <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 1.25rem",height:"4.2rem",maxWidth:"72rem",margin:"0 auto"}}>
         <div style={{display:"flex",flexDirection:"column",lineHeight:1}}>
-          <span className="gv" style={{fontSize:"2.1rem",color:"var(--yellow)",lineHeight:1}}>La Bella</span>
+          <div style={{display: "flex", alignItems: "center", gap: "10px"}}>
+            <img 
+              src="/logo.png" 
+              alt="Logo La Bella" 
+              style={{ height: "100px", width: "auto", objectFit: "contain" }} 
+            />
+            <span className="gv" style={{fontSize:"1.9rem",color:"var(--yellow)"}}>
+              La Bella
+            </span>
+          </div>
           <span className="mont" style={{fontSize:"0.55rem",letterSpacing:"0.16em",color:"rgba(255,255,255,0.45)",textTransform:"uppercase",marginTop:"-2px"}}>Pizzaria · Pindamonhangaba</span>
         </div>
         <button onClick={toggleCart} className="by" style={{padding:"0.5rem 1.1rem",borderRadius:"0.65rem",fontSize:"0.85rem",display:"flex",alignItems:"center",gap:"0.5rem",position:"relative"}}>
