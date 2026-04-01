@@ -1101,7 +1101,7 @@ function StoreView({menu,onAdmin,onOrderSaved}){
         <img 
           src="/logo.png" 
           alt="Logo La Bella" 
-          style={{ height: "140px", width: "auto", marginBottom: "1rem" }} 
+          style={{ height: "300px", width: "auto", marginBottom: "1rem" }} 
         />
         <h1 className="gv" style={{fontSize:"clamp(3rem,10vw,5.5rem)",color:"var(--yellow)",lineHeight:1.1,textShadow:"0 2px 20px rgba(0,0,0,.55)"}}>
           La Bella Pizzaria
