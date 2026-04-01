@@ -435,7 +435,7 @@ function Header({onAdmin}){
             <img 
               src="/logo.png" 
               alt="Logo La Bella" 
-              style={{ height: "100px", width: "auto", objectFit: "contain" }} 
+              style={{ height: "40px", width: "auto", objectFit: "contain" }} 
             />
             <span className="gv" style={{fontSize:"1.9rem",color:"var(--yellow)"}}>
               La Bella
